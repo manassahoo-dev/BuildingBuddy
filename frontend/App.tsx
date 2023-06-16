@@ -6,7 +6,6 @@ import React from 'react';
 import {ScrollView, StyleSheet, Text, useColorScheme, View} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Button from './src/components/atoms/Button';
 
 type SectionProps = PropsWithChildren<{
@@ -97,7 +96,11 @@ const HomeScreen = ({navigation}) => {
   );
 };
 const ProfileScreen = ({navigation, route}) => {
-  return <Text>This is profile</Text>;
+  return (
+    <>
+      <Text>Manas Sahoo</Text>
+    </>
+  );
 };
 
 const Stack = createNativeStackNavigator();
