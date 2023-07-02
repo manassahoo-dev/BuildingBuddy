@@ -19,7 +19,9 @@ db.once('open', () => {
 });
 
 app.use('/api/files', fileRoutes);
-app.get('/', () => console.log('/'));
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
