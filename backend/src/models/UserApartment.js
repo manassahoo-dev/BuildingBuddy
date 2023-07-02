@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 const userApartmentSchema = new mongoose.Schema(
   {
     user: {

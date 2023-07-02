@@ -2,12 +2,10 @@ const mongoose = require('mongoose');
 
 const apartmentSchema = new mongoose.Schema(
   {
-    name: {
-      type: String,
-      required: true,
-    },
+    name: { type: String, required: true },
     address: {
-      type: String,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Address',
       required: true,
     },
   },
